@@ -25,6 +25,26 @@
         background-color: yellow;
     }
 
+    .heading_web ,h1{
+            color: yellow;
+            /* text-align: ; */
+            position: relative;
+            font-size: 2em;
+            letter-spacing: 4px;
+            margin-bottom: 20px;
+            animation: glow 1.5s infinite alternate;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.8);
+            }
+            to {
+                text-shadow: 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.8);
+            }
+        }
+
 </style>
 </head>
 <body>
@@ -52,7 +72,7 @@
                         <a class="nav-link" href="#Contact">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#Skill">Skill</a>
+                        <a class="nav-link" href="#skill">Skill</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#Project">Project</a>
@@ -63,15 +83,27 @@
     </header>
     <!-- Rest of your content -->
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> <!-- Bootstrap dependency -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script> <!-- Bootstrap dependency -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> <!-- Bootstrap JS -->
+   
+
+<div class="bgimage">
+<img src="https://images.pexels.com/photos/1933900/pexels-photo-1933900.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+<div class="details">
+<h3 >Komal Prajapat</h3>
+<h1  class="heading_web">Web Developer</h1>
+<p >
+    I'm a web designer. I strive to learn something new every day. I have a passion for programming, and I aim for each day to be better than the one before.
+</p>
+</div>
+</div>
 
 
 
-<BR><BR>
+
+
+
+
 <!-- //first page  -->
-<div class="container" >
+<!-- <div class="container" >
     <div class="row"  id="about">
         <div class="col-lg-6 col-md-12 about_me">
             <h3>Hello, It's Me</h3>
@@ -84,73 +116,87 @@
             <!-- <img src="my_photo.jpg" class="img-fluid my_photo" style="border-radius: 100%; width: 300px; height: 300px;"> -->
         </div>
     </div>
-</div>
+</div> 
 
 <!-- //end first page -->
 <BR><Br>
 <!-- Skill -->
 <center>
-<div class="container">
-<h1 class="skill_h1" id="Skill" class="container">
-    My Skills
-</h1>
-<div class="row">
-    <div class="col-lg-6 col-md-12">
-        <div class="skill-bar">
-            <div class="skill c">C</div>
-            <div class="progress">
-                <div class="progress-bar progress-bar-yellow" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
+    <center><h1 style="color: #000;"> Skill</h1></center><br>
+<div class="container" style="display: flex; " id="skill">
+    <div class="row">
+    <div class="card" id="htmlCard" style="background: #000;">
+        <div class="rating">
+            <h2><span class="counter" data-target="90">90%<br>HTML</span></h2>
+            <div class="block"></div>
         </div>
+    </div>
 
-        <div class="skill-bar">
-            <div class="skill cpp">C++</div>
-            <div class="progress">
-                <div class="progress-bar progress-bar-yellow" role="progressbar" style="width: 7%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
+    <div class="card" id="cssCard" style="background: #000;">
+        <div class="rating">
+            <h2><span class="counter" data-target="80">80%<br>CSS</span></h2>
+            <div class="block"></div>
         </div>
+    </div>
 
-        <div class "skill-bar">
-            <div class="skill c">JAVA</div>
-            <div class="progress">
-                <div class="progress-bar progress-bar-yellow" role="progressbar" style="width: 70%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
+    <div class="card" id="jsCard" style="background: #000;">
+        <div class="rating">
+            <h2><span class="counter" data-target="80">50%<br>JS</span></h2>
+            <div class="block"></div>
         </div>
+    </div>
 
-        <div class="skill-bar">
-            <div class="skill cpp">HMTL</div>
-            <div class="progress">
-                <div class="progress-bar progress-bar-yellow" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
+    <div class="card" id="reactCard" style="background: #000;">
+        <div class="rating">
+            <h2><span class="counter" data-target="80">10%<br>React</span></h2>
+            <div class="block"></div>
         </div>
+    </div>
 
-        <div class="skill-bar">
-            <div class="skill c">CSS</div>
-            <div class="progress">
-                <div class="progress-bar progress-bar-yellow" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-        </div>
 
-        <div class="skill-bar">
-            <div class="skill cpp">JS</div>
-            <div class="progress">
-                <div class="progress-bar progress-bar-yellow" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
+    <div class="card" id="cCard" style="background: #000;">
+        <div class="rating">
+            <h2><span class="counter" data-target="80">70%<br>C</span></h2>
+            <div class="block"></div>
         </div>
+    </div>
 
-        <div class="skill-bar">
-            <div class="skill cpp">REACT</div>
-            <div class="progress">
-                <div class="progress-bar progress-bar-yellow" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
+    <div class="card" id="cppCard" style="background: #000;">
+        <div class="rating">
+            <h2><span class="counter" data-target="80">80%<br>C++</span></h2>
+            <div class="block"></div>
         </div>
-        <!-- Add more skills and progress bars as needed -->
+    </div>
+    <div class="card" id="javaCard" style="background: #000;">
+        <div class="rating">
+            <h2><span class="counter" data-target="80">70%<br>java</span></h2>
+            <div class="block"></div>
+        </div>
     </div>
 </div>
-
-
 </div>
-</center>
+    <script>
+        function createCircularProgressBar(cardId, percentage) {
+            const rating = document.getElementById(cardId).getElementsByClassName('rating')[0];
+            for (let i = 1; i <= percentage; i++) {
+                const block = document.createElement('div');
+                block.className = 'block';
+                block.style.transform = `rotate(${3.6 * i}deg)`;
+                block.style.animationDelay = `${i / 40}s`;
+                rating.appendChild(block);
+            }
+        }
+        createCircularProgressBar('htmlCard', 90);
+        createCircularProgressBar('cssCard', 80);
+        createCircularProgressBar('jsCard', 50);
+        createCircularProgressBar('reactCard', 10);
+        createCircularProgressBar('cCard', 70);
+        createCircularProgressBar('cppCard', 80);
+        createCircularProgressBar('javaCard', 70);
+
+
+    </script>
+    </center>
 <!-- Project -->
 <BR><BR>
     <center>
@@ -222,6 +268,8 @@
     </div>
 </div>
 <BR><BR>
+
+
 <footer id="footer" >
     <div class="row">
         <div class="col-md-6">
@@ -246,6 +294,8 @@
 
 
 
-
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> <!-- Bootstrap dependency -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script> <!-- Bootstrap dependency -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> <!-- Bootstrap JS -->
 </body>
 </html>
